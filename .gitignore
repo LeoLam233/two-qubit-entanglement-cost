@@ -1,0 +1,14 @@
+# Lean / Lake build caches
+/.lake/
+*.olean
+*.ilean
+*.trace
+
+# Reproducible verifier output; no generated logs are source inputs
+/evidence/*.log
+/evidence/*.json
+
+# Misc
+.DS_Store
+__pycache__/
+*.pyc

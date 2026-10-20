@@ -1,0 +1,10 @@
+import EC2.ConcurrenceZeroFacePhase
+
+#print EC2.ConcurrenceZeroFace.exists_orthogonal_zero_diagonal
+#print EC2.ConcurrenceZeroFace.exists_real_zero_face_factor
+#print EC2.ConcurrenceZeroFace.concurrence_zero_of_real_antidiagonal
+#print EC2.ConcurrenceZeroFace.concurrence_zero_of_diagonal_marginals_antidiagonal
+#print axioms EC2.ConcurrenceZeroFace.exists_orthogonal_zero_diagonal
+#print axioms EC2.ConcurrenceZeroFace.exists_real_zero_face_factor
+#print axioms EC2.ConcurrenceZeroFace.concurrence_zero_of_real_antidiagonal
+#print axioms EC2.ConcurrenceZeroFace.concurrence_zero_of_diagonal_marginals_antidiagonal

@@ -1,0 +1,14 @@
+import EC2.ConcurrencePhaseAxes
+
+#check EC2.exists_antidiagonal_phases
+#check EC2.exists_nonnegative_antidiagonal_gauge
+#check EC2.phaseUnitary_rotation_zAxis
+#check EC2.transverseBound_localConj_phase
+#check EC2.fixed_z_bound_of_nonnegative_gauge
+#check EC2.fixed_axis_bound_of_fixed_z
+#print axioms EC2.exists_antidiagonal_phases
+#print axioms EC2.exists_nonnegative_antidiagonal_gauge
+#print axioms EC2.phaseUnitary_rotation_zAxis
+#print axioms EC2.transverseBound_localConj_phase
+#print axioms EC2.fixed_z_bound_of_nonnegative_gauge
+#print axioms EC2.fixed_axis_bound_of_fixed_z
