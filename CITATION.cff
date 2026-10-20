@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+message: "Please cite the manuscript when referring to the mathematical result."
+title: "Entanglement cost of every two-qubit state"
+authors:
+  - family-names: Lin
+    given-names: Dehao
+    affiliation: "School of Physics, Sun Yat-sen University"
+    email: lindh9@mail2.sysu.edu.cn
+repository-code: "https://github.com/LeoLam233/two-qubit-entanglement-cost"
+url: "https://github.com/LeoLam233/two-qubit-entanglement-cost/blob/main/manuscript/EC2_PROOF.pdf"
+abstract: >-
+  Strong superadditivity of entanglement of formation with a distinguished
+  two-qubit subsystem; additivity with every finite-dimensional bipartite partner;
+  the entanglement-cost formula for arbitrary two-qubit states.

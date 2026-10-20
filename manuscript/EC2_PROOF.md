@@ -1,4 +1,19 @@
-# Entanglement cost of every two-qubit state
+---
+title: Entanglement cost of every two-qubit state
+author: Dehao Lin
+affiliation: School of Physics, Sun Yat-sen University, Guangzhou, China
+email: lindh9@mail2.sysu.edu.cn
+date: ""
+abstract: |
+  We establish strong superadditivity of entanglement of formation for arbitrary
+  finite-dimensional mixed states with a distinguished two-qubit subsystem.
+  Consequently, entanglement of formation is additive for every two-qubit state
+  paired with any finite-dimensional bipartite state, and the asymptotic
+  entanglement cost equals the Wootters expression. Our proof combines a balanced
+  rectangular block-matrix entropy inequality derived from the Schatten--Hanner
+  inequality with a transverse-correlation bound for concurrence at fixed
+  marginal eigenaxes.
+---
 
 ## 1. Definitions and result
 

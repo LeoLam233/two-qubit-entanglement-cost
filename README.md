@@ -1,5 +1,9 @@
 # Entanglement cost of every two-qubit state
 
+**Dehao Lin**  
+School of Physics, Sun Yat-sen University, Guangzhou, China  
+[lindh9@mail2.sysu.edu.cn](mailto:lindh9@mail2.sysu.edu.cn)
+
 This repository contains a mathematical manuscript and its Lean 4 formalization of a strong-superadditivity result for **entanglement of formation with a distinguished two-qubit subsystem**.
 
 For every finite-dimensional state \(\Omega_{AA'BB'}\) with \(A\) and \(B\) qubits and arbitrary finite-dimensional \(A'\) and \(B'\), the result is
@@ -25,7 +29,7 @@ where \(C\) is the two-qubit concurrence and \(W(c)=h_2((1+\sqrt{1-c^2})/2)\).
 - [Mathematical proof (PDF)](manuscript/EC2_PROOF.pdf)
 - [Searchable mathematical proof (Markdown)](manuscript/EC2_PROOF.md)
 
-The PDF is the unchanged seven-page manuscript used as input to the independent mathematical and Lean audits (SHA-256 `3eec16b39f5a1f8a7157d8737f5c5f2e35e52c412f74bc76d6b4391d490ddeef`).
+The PDF is a seven-page scholarly manuscript with author information and an abstract. The mathematical proof sections are unchanged from the reviewed scientific text.
 
 ## Lean formalization
 
@@ -58,7 +62,7 @@ With pinned dependencies already downloaded:
 python3 scripts/verify.py --clean
 ```
 
-The verification script runs a complete Lake build, checks the selected dependency revisions, prints the exact final declaration types and dependencies, and writes local records into `evidence/` (ignored by Git).
+The verification script runs a complete Lake build, checks the selected dependency revisions, prints the exact final declaration types and dependencies, and writes local verification records under `evidence/` (generated log and JSON files are ignored by Git).
 
 Alternatively, the essential checks are:
 
@@ -69,6 +73,12 @@ lake env lean verification/Statements.lean
 
 For details, see [verification and mathematical scope](docs/VERIFICATION.md).
 
+To regenerate the manuscript PDF from its Markdown source (with Pandoc and XeLaTeX installed):
+
+```bash
+python3 scripts/build_manuscript.py
+```
+
 ## Primary mathematical sources
 
 1. W. K. Wootters, *Entanglement of Formation of an Arbitrary State of Two Qubits*, Physical Review Letters **80**, 2245–2248 (1998). [arXiv:quant-ph/9709029](https://arxiv.org/abs/quant-ph/9709029).
@@ -76,3 +86,7 @@ For details, see [verification and mathematical scope](docs/VERIFICATION.md).
 3. P. M. Hayden, M. Horodecki and B. M. Terhal, *The asymptotic entanglement cost of preparing a quantum state*, Journal of Physics A **34**, 6891–6898 (2001). [arXiv:quant-ph/0008134](https://arxiv.org/abs/quant-ph/0008134).
 
 Further references and the full derivation are in the manuscript.
+
+## Citation and licensing
+
+Citation metadata is provided in [`CITATION.cff`](CITATION.cff). The original Lean source and project scripts are licensed under the [MIT License](LICENSE); the original manuscript and project-authored documentation are licensed under [Creative Commons Attribution 4.0 International](LICENSE-CONTENT.md). Third-party dependencies and their own materials remain under their respective licenses.
