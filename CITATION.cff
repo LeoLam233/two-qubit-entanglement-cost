@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-message: "Please cite the manuscript when referring to the mathematical result."
+message: "Please cite the manuscript when referring to the mathematical result. The PDF and canonical LaTeX source are linked in the repository README."
 title: "Entanglement cost of every two-qubit state"
 authors:
   - family-names: Lin

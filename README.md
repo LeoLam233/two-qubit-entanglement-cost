@@ -27,9 +27,9 @@ where \(C\) is the two-qubit concurrence and \(W(c)=h_2((1+\sqrt{1-c^2})/2)\).
 ## Manuscript
 
 - [Mathematical proof (PDF)](manuscript/EC2_PROOF.pdf)
-- [Searchable mathematical proof (Markdown)](manuscript/EC2_PROOF.md)
+- [Canonical LaTeX source](manuscript/EC2_PROOF.tex)
 
-The PDF is a seven-page scholarly manuscript with author information and an abstract. The mathematical proof sections are unchanged from the reviewed scientific text.
+The reader edition includes author information, an abstract, and the complete original proof. Its sole canonical manuscript source is `manuscript/EC2_PROOF.tex`; the PDF is built directly from that file. The former Markdown source is preserved in Git history and in the editorial review archive.
 
 ## Lean formalization
 
@@ -73,11 +73,15 @@ lake env lean verification/Statements.lean
 
 For details, see [verification and mathematical scope](docs/VERIFICATION.md).
 
-To regenerate the manuscript PDF from its Markdown source (with Pandoc and XeLaTeX installed):
+To regenerate the manuscript PDF, install Python 3 and pdfLaTeX from TeX Live or MiKTeX, with `article`, T1/UTF-8 support, Latin Modern (`lmodern`), `geometry`, `amsmath`, `amssymb`, `amsthm`, `microtype`, `xcolor` and `hyperref`. Run:
 
 ```bash
 python3 scripts/build_manuscript.py
 ```
+
+On Windows, use `python` in place of `python3` if needed. To retain compiler diagnostics, add `--log-dir PATH`. The script runs pdfLaTeX until cross-references stabilize, rejects unresolved references, missing glyphs and overfull boxes, and copies the resulting PDF to `manuscript/EC2_PROOF.pdf`. Temporary auxiliary files are removed automatically. No Pandoc, BibTeX, external bibliography or REVTeX installation is needed.
+
+The build fixes `SOURCE_DATE_EPOCH` to `1792517193` (the original public baseline commit time), suppresses PDF timestamps and trailer identifiers, and records source and PDF SHA-256 hashes. Repeated builds are byte-identical with the same TeX distribution and package versions; a different TeX installation may produce different PDF bytes. `SHA256SUMS.txt` identifies the tracked source and output files, excluding itself.
 
 ## Primary mathematical sources
 

@@ -45,8 +45,17 @@ The unbalanced explanatory variant in manuscript Eq. (12) is not exported as a s
 
 ## Manuscript reproducibility and release identity
 
-The public seven-page PDF includes author details and a short abstract.
-The proof body, theorem hypotheses and numbered equations in the Markdown
-manuscript are unchanged from the audited original. Regenerate the PDF using
-`python3 scripts/build_manuscript.py` with Pandoc and XeLaTeX installed.
-The Lean modules and pinned compiler/library dependencies are unchanged.
+The reader PDF includes author details and a short abstract. Its sole canonical
+source is [`manuscript/EC2_PROOF.tex`](../manuscript/EC2_PROOF.tex), and the
+[compiled PDF](../manuscript/EC2_PROOF.pdf) is built directly from that source.
+The editorial migration preserves the original theorem hypotheses, proof
+architecture and equations (1)--(25). The historical Markdown is retained in
+Git history and the editorial review archive.
+
+Regenerate the PDF using `python3 scripts/build_manuscript.py` with Python 3
+and pdfLaTeX installed; the required standard packages and reproducibility
+settings are listed in the [README](../README.md#reproduce). Use
+`--log-dir PATH` to retain compiler diagnostics. A successful PDF build checks
+typesetting, not mathematical correspondence or formal verification.
+The Lean modules, verification scripts and pinned compiler/library dependencies
+are unchanged by the editorial migration.

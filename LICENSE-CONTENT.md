@@ -2,7 +2,8 @@
 
 Copyright © 2026 Dehao Lin.
 
-The original manuscript under `manuscript/EC2_PROOF.md` and
+The original manuscript, including its canonical source `manuscript/EC2_PROOF.tex`,
+its historical Markdown source `manuscript/EC2_PROOF.md` in Git history, and
 `manuscript/EC2_PROOF.pdf`, as well as the original project-authored
 `README.md` and documentation under `docs/`, are licensed under the
 [Creative Commons Attribution 4.0 International License (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/).
